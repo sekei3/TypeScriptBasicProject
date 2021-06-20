@@ -45,7 +45,6 @@ function readLine(fd: any, buffer: Buffer, bufferSize: number, position: number)
             else {
                 line += temp
                 position += temp.length
-                console.log(line)
             }
         }
         else {
