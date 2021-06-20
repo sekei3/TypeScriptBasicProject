@@ -5,6 +5,7 @@ import {writeFile} from './writeFile'
 import {readFile} from './readFile'
 import {appendFile} from './appendFile'
 import {deleteFile} from './deleteFile'
+import {readFileGenerator} from './readFileGenerator'
 
 export const exists = async(filePath: string) => {
     const result = await fileExists(filePath)
@@ -36,4 +37,4 @@ export const appendFileTest = async(fileName: string, data: any) => {
     console.log(`appendFile:${result} to ${fileName}`)
 }
 
-export {fileExists, mkdir, rmdir, writeFile, readFile, appendFile, deleteFile}
+export {fileExists, mkdir, rmdir, writeFile, readFile, appendFile, deleteFile, readFileGenerator}
